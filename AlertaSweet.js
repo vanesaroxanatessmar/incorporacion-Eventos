@@ -17,16 +17,16 @@
 	inputPlaceholder: 'Pais',
 	inputValue: '',
 	inputOptions: {
-        argentina: 'Argentina',
-        mexico: 'Mexico',
-        colombia: 'Colombia',
-        brasil: 'Brasil',
-        uruguay: 'Uruguay',
-        chile: 'Chile',
+        Argentina: 'Argentina',
+        Mexico: 'Mexico',
+        Colombia: 'Colombia',
+        Brasil: 'Brasil',
+        Uruguay: 'Uruguay',
+        Chile: 'Chile',
         Bolivia: 'Bolivia',
-        ecuador: 'Ecuador',
-        paraguay: 'Paraguay',
-        argentina: 'Argentina',
+        Ecuador: 'Ecuador',
+        Paraguay: 'Paraguay',
+        Argentina: 'Argentina',
         
     }
 	
