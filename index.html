@@ -1,269 +1,264 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#bla"  />
-    <title>Carrito M'agie Lingerie</title>
-    
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito Mágie Lingerie</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/stylee.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo.jpg" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
 
-    <link rel="stylesheet" href="./stylee.css"/>
-
-    <!------MAIN JS-->
-    <script src="./main.js"></script>
-    
-  </head>
-  <body>
-    <header class="container-fluid bg-dark position-sticky top-0">
-      <ul
-        class="nav nav-pills mb-3 py-3 container"
-        id="pills-tab"
-        role="tablist"
-      >
-        <li class="nav-item text-primary" role="presentation">
-          <a
-            class="nav-link "
-            id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-home"
-            type="button"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-            >Home</a
-          >
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link active"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-            >Productos</a
-          >
-        </li>
-        <li class="nav-item" role="presentation">
-          <a
-            class="nav-link"
-            id="pills-contact-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-contact"
-            type="button"
-            role="tab"
-            aria-controls="pills-contact"
-            aria-selected="false"
-            >Carrito</a
-          >
-        </li>
-      </ul>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
     </header>
 
-    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
-    Producto Añadido al carrito!
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Lucí la mejor parte de ti</h2>
+                                <p>Marcas exclusivas para lucir cada parte de tu cuerpo</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que marca buscas?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
     </div>
-    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
-      Producto removido!
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>MEDIO DE ENTREGA<br>
+                            Entregas a todo el país por Correo Argentino</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>TODAS LAS TAJETAS<br>
+                            Aceptamos toos los medios de pago</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>COMPRA SEGURA<br>
+                            Tus datos estan protegidos</p>
+                    </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="tab-content" id="pills-tabContent">
-      <div
-        class="tab-pane fade"
-        id="pills-home"
-        role="tabpanel"
-        aria-labelledby="pills-home-tab"
-      >
-        1
-      </div>
-      <div
-        class="tab-pane fade show active container"
-        id="pills-profile"
-        role="tabpanel"
-        aria-labelledby="pills-profile-tab"
-      >
-        <h2 class="h4 m-4 text-primary">Productos</h2>    
+    <div id="lista-ropas" class="container">
+        <h1 id="encabezado" class="encabezado">M'AGIE LINGERIE</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/marcas1.png" class="imagen-ropa u-full-width">
+                    <div class="info-card">
+                        <h4>CONJUNTO ANDRESSA</h4>
+                        <p>Encaje con puntilla</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3000  <span class="u-pull-right ">$2500  </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/marcas2.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>BODY ANDRESSA</h4>
+                            <p>Encaje y Tull</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$2900  <span class="u-pull-right ">$2100</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/marcas3.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CONJUNTO KOURY</h4>
+                            <p>Bretteles regulables, encaje y puntilla</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$2500  <span class="u-pull-right ">$1800</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
 
-        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/prod1.jpeg" class="imagen-ropa u-full-width">
+                    <div class="info-card">
+                        <h4>CONJUNTO ANDRESSA</h4>
+                        <p>Encaje, Bretteles regulables</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$3500  <span class="u-pull-right ">$2000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/prod2.jpeg" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CONJUNTO ANDRESSA</h4>
+                            <p>Encaje con bretteles auto regulables</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$5000  <span class="u-pull-right ">$3000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/prod4.jpeg" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>CONJUNTO BELEN</h4>
+                            <p>Conjunto de Lycra con Push Up</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$2700  <span class="u-pull-right ">$2300</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/bs.png" class="imagen-ropa u-full-width">
+                    <div class="info-card">
+                        <h4>CONJUNTO ANDRESSA</h4>
+                        <p>Encaje con puntillas</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$2400 <span class="u-pull-right ">$2000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/bs2.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>ANDRESSA</h4>
+                            <p>Encaje y puntilla</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$3100  <span class="u-pull-right ">$2000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/presentacion3.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>KOURY</h4>
+                            <p>Encaje con delicados detalles en flores rojas</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$2400  <span class="u-pull-right ">$1500</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/marcas1.png" class="imagen-ropa u-full-width">
+                        <div class="info-card">
+                            <h4>ANDRESSA</h4>
+                            <p>Encaje con Bretteles regulables</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$2400  <span class="u-pull-right ">$2000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/prod4.jpeg" class="imagen-ropa u-full-width">
+                            <div class="info-card">
+                                <h4>BELEN</h4>
+                                <p>Lycra sin encaje</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$3500  <span class="u-pull-right ">$2450</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/prod3.jpeg" class="imagen-ropa u-full-width">
+                            <div class="info-card">
+                                <h4>KOURY</h4>
+                                <p>Encaje con puntillas</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$1900  <span class="u-pull-right ">$1500</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
 
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Belen</h5>
-              <img src="./img/prod4.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Conjunto de algodon</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 3500</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Venta por Mayor</a>
+                                <a class="enlace" href="#">Soporte</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
             </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary"> Body Andressa</h5>
-              <img src="./img/conj2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Body de lucra, con puntillas.</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 3000</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Marcela Koury</h5>
-              <img src="./img/marcas2.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 2800</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Koury</h5>
-              <img src="./img/marcas3.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Conjunto de lacry y algodon, con puntillas.</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 3900</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Andressa</h5>
-              <img src="./img/prod1.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Conjunto de lacry y algodon con corset de puntillas.</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 5000</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Andressa</h5>
-              <img src="./img/prod2.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Cunjunto super delicado sin push up con puntilla.</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 3450</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Koury</h5>
-              <img src="./img/prod3.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Conjunto encaje super delicado.</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 2700</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center mb-4">
-            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
-              <h5 class="card-title pt-2 text-center text-primary">Belen</h5>
-              <img src="./img/fotomodelo2.png" class="card-img-top" alt="">
-              <div class="card-body">
-                <p class="card-text text-white-50 description">Conjunto belen lycra autorregulable</p>
-                <h5 class="text-primary">Precio: <span class="precio">$ 49000</span></h5>
-                <div class="d-grid gap-2">
-                <button  class="btn btn-primary button">Añadir a Carrito</button>
-              </div>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-
-      </div>
-      <div
-        class="tab-pane fade carrito"
-        id="pills-contact"
-        role="tabpanel"
-        aria-labelledby="pills-contact-tab"
-      >
-      <br>
-      <table class="table table-dark table-hover">
-        <thead>
-          <tr class="text-primary">
-            <th scope="col"></th>
-            <th scope="col">Productos</th>
-            <th scope="col">Precio</th>
-            <th scope="col">Cantidad</th>
-          </tr>
-        </thead>
-        <tbody class="tbody">
-            <tr>
-                <th scope="row">1</th>
-                <td class="table__productos">
-                    <img src="./img/conj2.png" alt="">
-                    <h6 class="title">title</h6>
-                </td>
-                <td class="table__price"><p>$ 0000</p></td>
-                <td class="table__cantidad">
-                    <input type="number" min="1" value="1">
-                    <button class="delete btn btn-danger">x</button>
-                </td>
-            </tr>       
-          
-        </tbody>
-      </table>
-      <br><br>
-      <div class="row mx-4">
-        <div class="col">
-          <h3 class="itemCartTotal text-white">Total: 0</h3>
-        </div>
-        <div class="col d-flex justify-content-end">
-          <button class="btn btn-success">COMPRAR</button>
-        </div>
-      </div>
-      
-      </div>
-    </div>    
-
-    <footer class="bg-dark p-3 mt-5">
-      <p class="text-center m-0 text-muted">M'AGIE LINGERIE</p>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-    </script>
-    
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-    </script>
+    <script src="../eventos-Tessmar/compra.js"></script>
 
-
-<!--SCRIPT  COMPRA JS-->
-    <script src="./compra.js"></script>
-    
-    <!--Script de Sweet Alert y Archivo CSS-->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./AlertaSweet.js"></script>
-  </body>
+</body>
 </html>
